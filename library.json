@@ -1,0 +1,35 @@
+{
+    "name": "ESPPacketLib",
+    "version": "0.1.0",
+    "description": "ESP32 Packet Management Library for MTU-based protocols",
+    "keywords": "esp32, communication, packet, mtu, espnow, ble",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chahil9725/ESPPacketLib.git"
+    },
+    "authors": [
+        {
+            "name": "Chahil Patel",
+            "maintainer": true
+        }
+    ],
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": ["espressif32"],
+    "dependencies": {
+        "freertos": "^10.0.0"
+    },
+    "export": {
+        "exclude": [
+            ".git",
+            ".github",
+            "docs",
+            "*.md"
+        ]
+    },
+    "build": {
+        "flags": [
+            "-I src"
+        ]
+    }
+}
